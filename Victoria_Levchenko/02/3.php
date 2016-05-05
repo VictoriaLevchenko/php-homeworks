@@ -15,12 +15,13 @@ if (!empty($_POST)) {
     $c = (float)$_POST['c'];
 
     if ($a < $c) {
-        $X = $a + $b / $c * $a;
+        $x = $a + $b / $c * $a;
     } elseif ($a == $c) {
-        $X = 100;
+        $x = 100;
     } elseif ($a > $c) {
-        $X = $a * $c * 3 * $b + $c / $c * sqrt($c);
+        $x = $a * $c * 3 * $b + $c / $c * sqrt($c);
     }
-    echo "$X";
+    echo "$x";
 }
+
 ?>
